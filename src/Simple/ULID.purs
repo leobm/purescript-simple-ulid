@@ -5,6 +5,7 @@ module Simple.ULID
   , toString
   ) where
 
+
 import Prelude
 
 import Control.Monad.Rec.Class (Step(..), tailRec, tailRecM)
@@ -15,10 +16,11 @@ import Data.String (length)
 import Data.String.CodeUnits (fromCharArray)
 import Data.String.Unsafe (charAt)
 import Data.Time.Duration (Milliseconds(..))
+import Data.Number (pow, (%))
 import Effect (Effect)
 import Effect.Exception (error, throwException)
 import Effect.Now (now)
-import Math (pow, (%))
+
 
 newtype ULID = ULID String
 

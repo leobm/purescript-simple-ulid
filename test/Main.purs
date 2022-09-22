@@ -6,11 +6,11 @@ import Data.String (length, take)
 import Data.Time.Duration (Milliseconds(..))
 import Effect (Effect)
 import Effect.Class (liftEffect)
-import Math (pow)
 import Simple.ULID (genULID, genULID', toString)
 import Test.Unit (test)
 import Test.Unit.Assert as Assert
 import Test.Unit.Main (runTest)
+import Data.Number (pow)
 
 main :: Effect Unit
 main = runTest do
